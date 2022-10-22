@@ -178,7 +178,9 @@ else
 fi
 
 
-
+## Tornando todos os arquivos .deb
+## em executavveis
+chmod +x *.deb
 
 echo -e "\n\n\n************************************************** INSTALACAO DO JDK-17 *****************************************"
 
@@ -224,9 +226,6 @@ echo "**************************************************************************
 
 echo -e "\n\n\n************************************************** INSTALANDO  ARQUIVOS  .DEB ************************************"
 
-## Tornando todos os arquivos .deb
-## em executavveis
-chmod +x *.deb
 
 sudo dpkg -i 4kvideodownloader_4.21.7-1_amd64.deb
 sudo apt --fix-broken install -y
